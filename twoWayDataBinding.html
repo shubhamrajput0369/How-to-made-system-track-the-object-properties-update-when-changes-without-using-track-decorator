@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Tracking Text Variable without @Track">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter your occupation" onkeyup={onChangeHandler}></lightning-input>
+            <div>{responsibilityTitle} is my occupation</div>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Tracking Array Values without @Track">
+        <div class="slds-var-m-around_medium">
+            <lightning-input name="city" type="text" label="Enter your city" onkeyup={onTrackHandler}></lightning-input>
+            <div>{address.city} is my city</div>
+            <lightning-input name="pin" type="text" label="Enter your PIN" onkeyup={onTrackHandler}></lightning-input>
+            <div>{address.pin} is my PIN</div>
+            <lightning-input name="country" type="text" label="Enter your Country" onkeyup={onTrackHandler}></lightning-input>
+            <div>{address.country} is my Country</div>
+        </div>
+    </lightning-card>
+</template>
